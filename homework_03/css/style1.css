@@ -1,0 +1,97 @@
+body {
+  box-sizing: border-box;
+  background-color: #dcbb9a;
+}
+body #content {
+  background-color: #fff;
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+body #content .brief {
+  float: left;
+  width: 380px;
+  background-color: #fadcba;
+  margin: 0 20px 10px 0;
+  padding: 20px;
+}
+body #content h1 {
+  text-align: center;
+  margin: 0;
+}
+body #content h1, body #content h2 {
+  color: #893c00;
+}
+body #content .img-left {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+body #content .img-right {
+  float: right;
+  margin: 0 0 5px 20px;
+}
+body #content img {
+  border: 2px solid #893c00;
+  padding: 2px;
+}
+body #content p {
+  color: #000;
+}
+body #content table tr th {
+  background-color: #e0e0e0;
+}
+body #content table tr td {
+  border-bottom: 1px solid #e0e0e0;
+}
+body #content table {
+  text-align: left;
+  width: 95%;
+  border-collapse: collapse;
+  margin-bottom: 70px;
+}
+body #content table caption {
+  margin-left: 75%;
+}
+body #content table tr th {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+body #content table tr td {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #000;
+}
+body #content form .lineInput {
+  width: 49%;
+  float: left;
+}
+body #content form .lineInput label {
+  display: block;
+  color: #808080;
+}
+body #content form .lineInput input {
+  width: 98%;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+}
+body #content form div:first-child {
+  margin-right: 19px;
+}
+body #content form .blockInput label {
+  color: #808080;
+}
+body #content form .blockInput input, body #content form .blockInput textarea {
+  width: 99%;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+}
+body #content form button {
+  padding: 15px 70px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid #3d70a1;
+  color: #3d70a1;
+  cursor: pointer;
+}

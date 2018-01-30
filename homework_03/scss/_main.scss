@@ -1,0 +1,99 @@
+$contentBackground: null !default;
+
+@mixin content {
+	background-color: $contentBackground;
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 15px;
+
+	h1 {
+		text-align: center;
+		margin: 0;
+	}
+	h1, h2 {
+		color: $headerColor;
+	}
+	.img-left {
+		float: left;
+		margin: 0 20px 10px 0;
+	}
+	.img-right {
+		float: right;
+		margin: 0 0 5px 20px;
+	}
+	img {
+		border: 2px solid $borderImg;
+		padding: 2px;
+	}
+	p {
+		color: $textColor;
+	}
+}
+
+@mixin table {
+	table {
+		text-align: left;
+		width: 95%;
+		border-collapse: collapse;
+		margin-bottom: 70px;
+
+		caption {
+			margin-left: 75%;
+		}
+		tr {
+			th {
+				font-size: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding: 10px 20px;
+			}
+			td {
+				padding: 10px 20px;
+				font-size: 15px;
+				color: $textColor;
+			}
+		}
+	}
+}
+
+@mixin form {
+	form {
+		.lineInput {
+			width: 49%;
+			float: left;
+
+			label {
+				display: block;
+				color: $inputColor;
+			}
+			input {
+				width: 98%;
+				margin: 5px 0 10px 0;
+				padding: 5px;
+			}
+		}
+		div {
+			&:first-child {
+				margin-right: 19px;
+			}
+		}
+		.blockInput {
+			label {
+				color: $inputColor;
+			}
+			input, textarea {
+				width: 99%;
+				margin: 5px 0 10px 0;
+				padding: 5px;
+			}
+		}
+		button {
+			padding: 15px 70px;
+			font-size: 20px;
+			background-color: transparent;
+			border: 1px solid $btnColor;
+			color: $btnColor;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+@import "variables2";
+@import "main";
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+
+	#content {
+		.brief {
+			width: 96%;
+			background-color: $posterColor;
+			margin: 0 auto 30px auto;
+			padding: 20px;
+		}
+		a {
+			color: $linkColor;
+		}
+		@include content;
+		table {
+			tr {
+				th {
+					background-color: $tableHeaderColor;
+					border-right: 1px solid #fff;
+
+					&:last-child {
+						border-right: none;
+					}
+				}
+				td {
+					border-bottom: 1px solid $tableHeaderColor;
+					background-color: $tableColor;
+				}
+			}
+		}
+		@include table;
+		@include form;
+	}
+}

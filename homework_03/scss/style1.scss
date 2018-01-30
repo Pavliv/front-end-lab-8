@@ -1,0 +1,32 @@
+@import "variables1";
+@import "main";
+
+body {
+	box-sizing: border-box;
+	background-color: $themePrimaryColor;
+
+	#content {
+		.brief {
+			float: left;
+			width: 380px;
+			background-color: $posterColor;
+			margin: 0 20px 10px 0;
+			padding: 20px;
+		}
+		@include content;
+
+		table {
+			tr {
+				th {
+					background-color: $tableColor;
+				}
+				td {
+					border-bottom: 1px solid $tableColor;
+				}
+			}
+		}
+
+		@include table;
+		@include form;
+	}
+}
